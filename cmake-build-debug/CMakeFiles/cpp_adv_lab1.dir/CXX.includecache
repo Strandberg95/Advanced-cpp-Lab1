@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/Strandberg95/CLionProjects/cpp_adv_lab1/cpp/Link.cpp
+../headers/Link.h
+/Users/Strandberg95/CLionProjects/cpp_adv_lab1/headers/Link.h
+../headers/List.h
+/Users/Strandberg95/CLionProjects/cpp_adv_lab1/headers/List.h
+/Users/Strandberg95/CLionProjects/cpp_adv_lab1/headers/Link.h
+-
+iostream
+-
+
+/Users/Strandberg95/CLionProjects/cpp_adv_lab1/cpp/List.cpp
+iosfwd
+-
+../headers/List.h
+/Users/Strandberg95/CLionProjects/cpp_adv_lab1/headers/List.h
+
+/Users/Strandberg95/CLionProjects/cpp_adv_lab1/headers/Link.h
+iosfwd
+-
+Link.h
+/Users/Strandberg95/CLionProjects/cpp_adv_lab1/headers/Link.h
+List.h
+/Users/Strandberg95/CLionProjects/cpp_adv_lab1/headers/List.h
+
+/Users/Strandberg95/CLionProjects/cpp_adv_lab1/headers/List.h
+List.h
+/Users/Strandberg95/CLionProjects/cpp_adv_lab1/headers/List.h
+Link.h
+/Users/Strandberg95/CLionProjects/cpp_adv_lab1/headers/Link.h
+
+/Users/Strandberg95/CLionProjects/cpp_adv_lab1/main.cpp
+iostream
+-
+
