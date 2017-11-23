@@ -16,7 +16,6 @@ public:
 template Link<Node>;    //Detta tvingar fram att allting i Link kompileras
 template List<Node>;    //Detta tvingar fram att allting i List kompileras
 
-
 void TestDLL() {
     List<Node> myList;
     assert(myList.Invariant());

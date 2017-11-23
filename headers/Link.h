@@ -5,7 +5,8 @@
 #ifndef CPP_ADV_LAB1_LINK_H
 #define CPP_ADV_LAB1_LINK_H
 
-#include <iostream>;
+#include <iostream>
+using namespace std;
 
 template <class T>
 class List;
@@ -20,22 +21,24 @@ public:
     Link(){
 
     }
+
     ~Link() = default;
 
-    T*Next(){
-        return this->next;
+    T*Next() const {
+        return static_cast<T*>(this->next);
     }
-    T*Prev(){
-        return this->prev;
+
+    T*Prev() const {
+        return static_cast<T*>(this->prev);
     }
 
     T* InsertAfter(T* ToInsert){
         if(next == nullptr){
-            next = ToInsert;
+            this->next = ToInsert;
         }else{
             next->InsertAfter(ToInsert);
         }
-        return next;
+        return static_cast<T*>(next);
     }
 
     T* InsertBefore(T* ToInsert){
@@ -44,7 +47,7 @@ public:
         }else{
             prev = InsertBefore(ToInsert);
         }
-        return prev;
+        return static_cast<T*>(prev);
     }
 
     T* DeleteAfter(){
@@ -56,7 +59,8 @@ public:
 
     }
 
-    virtual std::ostream& Print(std::ostream& cout){
+    virtual std::ostream& Print(std::ostream& cout) const {
+        cout << "You are here" << endl;
         return cout;
     }
 };
